@@ -15,7 +15,7 @@ docker-compose up -d
 ```
 
 ### 2. Uso
-Após iniciado, as aplicações estão disponíveis nos endereços IP abaixo.
+Após iniciado, as aplicações estão disponíveis nos endereços abaixo.
 
 - Frontend - `http://localhost:4200`
 - Backend - `http://localhost:8080`
