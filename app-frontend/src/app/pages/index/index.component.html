@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Data de cadastro</th>
+                    <th>Última atualização</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of pessoa ; let i = index" class="text-center">
+                    <td>{{ p.nome }}</td>
+                    <td>{{ p.cpf }}</td>
+                    <td>{{ p.dataCadastro }}</td>
+                    <td>{{ p.dataAtualizacao }}</td>
+                    <td width="15%">
+                        <div style="display: flex">
+                            <button class="btn btn-primary" (click)="goToUpdatePessoa(p)">Alterar</button>
+                            <button class="btn btn-danger" (click)="deletePessoa(p.id)">Deletar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        <button class="btn btn-secondary" (click)="goToAddPessoa()">Criar Pessoa</button>
+    </div>
+</div>

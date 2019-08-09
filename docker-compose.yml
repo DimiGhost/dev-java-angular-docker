@@ -1,0 +1,23 @@
+version: "3"
+services:
+  app-backend:
+    image: dimighost/app-backend
+    container_name: app-backend
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+  db:
+    image: "postgres:10"
+    container_name: db_postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_password=123
+      - POSTGRES_DB=db_restful
+    ports:
+      - 5432:5432
+  app-frontend:
+    image: dimighost/app-frontend
+    container_name: app-frontend
+    ports:
+      - 4200:80

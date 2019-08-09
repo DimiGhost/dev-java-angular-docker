@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <label>Nome</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.nome" placeholder="João Silva" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>CPF</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.cpf" placeholder="999.999.999-99" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Email</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.email" placeholder="examplo@provedor.com" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Data de Nascimento</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.dataNascimento" placeholder="01/01/1990" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Naturalidade</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.naturalidade" placeholder="Santa Catarina" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Nacionalidade</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.nacionalidade" placeholder="Brasileiro" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Sexo (F ou M)</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" class="form-control" [(ngModel)]="pessoa.sexo" />
+        </div>
+    </div>
+    <br>
+    <div class="text-right">
+        <button class="btn btn-secondary" (click)="goToList()">Voltar</button>
+        <button class="btn btn-primary" (click)="salvarPessoa()">Salvar</button>
+    </div>
+</div>
